@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Whycoding from "./components/pages/whyCoding/Whycoding";
+import Topbar from "./components/topbar/Topbar";
+import Home from "./components/pages/Home/Home";
+import WhyMentor from "./components/pages/whyMentor/WhyMentor";
+import Pricing from "./components/pages/pricing/Pricing";
+import Question from "./components/pages/question/Question";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Topbar />
+      <Home />
+      <Whycoding />
+      <WhyMentor />
+      <Pricing />
+      <Question />
+      <Contact />
+      <Footer />
+      </>
   );
 }
 
