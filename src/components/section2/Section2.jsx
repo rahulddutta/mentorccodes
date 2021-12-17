@@ -33,7 +33,7 @@ export default function Section() {
   return (
     <div className={classes.section2}>
       <div className={classes.text}>
-        Why <span className={classes.textSpan}> is Coding nessasary?</span>
+        Why <span className={classes.textSpan}> is Coding necessary?</span>
       </div>
     </div>
   );
