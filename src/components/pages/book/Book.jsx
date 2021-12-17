@@ -201,7 +201,7 @@ export default function Book() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("You are successfuly registered. Please expect a call from us regarding your schedule");
         },
         (error) => {
           console.log(error.text);

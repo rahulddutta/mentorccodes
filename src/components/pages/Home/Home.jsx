@@ -119,7 +119,7 @@ export default function Home() {
               {" "}
               Computer <span className={classes.border}>
                 Coding
-              </span> Resoning{" "}
+              </span> Reasoning{" "}
             </div>
           </div>
           <div className={classes.button}>
