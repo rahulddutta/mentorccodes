@@ -109,7 +109,7 @@ export default function Home() {
             <div>Live coding classes for</div>
             {/* <div>classes for</div> */}
             <div className={classes.text3}>
-              Automating{" "}
+              Automatings{" "}
               <span className={classes.thirdSpan}>repetetive task</span>{" "}
             </div>
           </div>
