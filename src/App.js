@@ -9,17 +9,18 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 
 
+
 function App() {
   return (
     <>
-      <Topbar />
-      <Home />
-      <Whycoding />
-      <WhyMentor />
-      <Pricing />
-      <Question />
-      <Contact />
-      <Footer />
+   <Topbar/>
+   <Home/>
+   <Whycoding/>
+   <WhyMentor/>
+   <Pricing/>
+   <Question/>
+   <Contact/>
+   <Footer/>
       </>
   );
 }
