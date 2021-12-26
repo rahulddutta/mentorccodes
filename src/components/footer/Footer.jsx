@@ -1,5 +1,5 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import How from "../../wordings/how.pdf"
+
 
 const useStyles = makeStyles((theme) => ({
   first: {
@@ -60,7 +60,7 @@ export default function Footer() {
             Made with <span className={classes.heart}>&hearts;</span> in India
           </div>
           <div className={classes.text3}>
-            About Us <span className={classes.span}><a href={How} className={classes.link}>Terms & Conditions</a></span> Private Policy
+            About Us <span className={classes.span}>Terms & Conditions</span> Private Policy
           </div>
         </Grid>
       </Grid>
