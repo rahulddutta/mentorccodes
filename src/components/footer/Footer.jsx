@@ -1,6 +1,5 @@
 import { Grid, makeStyles } from "@material-ui/core";
 
-
 const useStyles = makeStyles((theme) => ({
   first: {
     height: 70,
@@ -11,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#edf1fa",
     [theme.breakpoints.down("xs")]: {
       display: "block",
-      textAlign:"center",
-      height:130
+      textAlign: "center",
+      height: 130,
     },
   },
   text1: {
@@ -27,24 +26,27 @@ const useStyles = makeStyles((theme) => ({
   },
   heart: {
     color: "red",
-    fontSize:"18px"
+    fontSize: "18px",
   },
   text3: {
     color: "#030856",
     fontSize: "14px",
     fontFamily: "Roboto Slab, serif",
-    cursor:"pointer"
+    cursor: "pointer",
+    [theme.breakpoints.down("xs")]: {
+    cursor:"none"
+    },
   },
   span: {
-      borderLeft:"1px solid red",
-      borderRight:"1px solid red",
-      paddingLeft:"5px",
-      paddingRight:"5px"
+    borderLeft: "1px solid red",
+    borderRight: "1px solid red",
+    paddingLeft: "5px",
+    paddingRight: "5px",
   },
-  link : {
-    textDecoration:"none",
-    color:"inherit"
-  }
+  link: {
+    textDecoration: "none",
+    color: "inherit",
+  },
 }));
 
 export default function Footer() {
@@ -60,7 +62,9 @@ export default function Footer() {
             Made with <span className={classes.heart}>&hearts;</span> in India
           </div>
           <div className={classes.text3}>
-            About Us <span className={classes.span}>Terms & Conditions</span> Private Policy
+            <a className={classes.link} href="https://mentorcodesaboutus.netlify.app/">About Us</a>{" "}
+            <span className={classes.span}>Terms & Conditions</span> Private
+            Policy
           </div>
         </Grid>
       </Grid>
