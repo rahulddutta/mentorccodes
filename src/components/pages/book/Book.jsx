@@ -194,10 +194,10 @@ export default function Book() {
 
     emailjs
       .sendForm(
-        "gmails",
-        "template_mjqy8rj",
+        "gmail",
+        "template_ascwa2x",
         form.current,
-        "user_dze3kmaBFcjaRvlOxAhrX"
+        "user_9BDt6EEZBYGhhdIA6kbrq"
       )
       .then(
         (result) => {

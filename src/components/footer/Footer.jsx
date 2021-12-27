@@ -1,4 +1,6 @@
 import { Grid, makeStyles } from "@material-ui/core";
+import Privacy from "../../wordings/privacymentor.pdf";
+import Terms from "../../wordings/mentorterms.pdf";
 
 const useStyles = makeStyles((theme) => ({
   first: {
@@ -34,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto Slab, serif",
     cursor: "pointer",
     [theme.breakpoints.down("xs")]: {
-    cursor:"none"
+      cursor: "none",
     },
   },
   span: {
@@ -47,6 +49,11 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "inherit",
   },
+  linkLast: {
+    marginLeft:"5px",
+    textDecoration: "none",
+    color: "inherit",
+  }
 }));
 
 export default function Footer() {
@@ -62,9 +69,24 @@ export default function Footer() {
             Made with <span className={classes.heart}>&hearts;</span> in India
           </div>
           <div className={classes.text3}>
-            <a className={classes.link} href="https://mentorcodesaboutus.netlify.app/">About Us</a>{" "}
-            <span className={classes.span}>Terms & Conditions</span> Private
-            Policy
+            <a
+              className={classes.link}
+              href="https://mentorcodesaboutus.netlify.app/"
+            >
+              About Us
+            </a>{" "}
+            <span className={classes.span}>
+              {" "}
+              <a className={classes.link} href={Terms}>
+                Terms & Conditions
+              </a>{" "}
+            </span>{" "}
+            <a
+              className={classes.linkLast}
+              href={Privacy}
+            >
+              Private Policy
+            </a>
           </div>
         </Grid>
       </Grid>
