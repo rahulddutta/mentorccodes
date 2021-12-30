@@ -115,6 +115,11 @@ export default function Topbar() {
                   FAQ
                 </Lin>
               </div>
+              <div className={classes.list}>
+                <div>
+                  <a className={classes.link} href="https://mentorcodeside.netlify.app/">Write Code</a>
+                </div>
+              </div>
             </div>
             <div className={classes.btn}>
               <Button
