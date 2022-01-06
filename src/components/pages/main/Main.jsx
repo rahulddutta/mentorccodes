@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 import Contact from '../../contact/Contact'
 import Footer from '../../footer/Footer'
+import Topbar from '../../topbar/Topbar'
 import Home from '../Home/Home'
 import Pricing from '../pricing/Pricing'
 import Question from '../question/Question'
@@ -14,6 +15,7 @@ export default function Main() {
     const classes = useStyles()
     return (
         <div className={classes.main}>
+            <Topbar/>
             <Home/>
             <Whycoding/>
             <WhyMentor/>
