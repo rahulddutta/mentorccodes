@@ -1,4 +1,5 @@
 import { Button, Grid, makeStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import Kid from "../../../images/section1.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   second: {
     backgroundColor: "#edf1fa",
     height: 600,
-    paddingTop:"60px",
+    paddingTop:"100px",
     [theme.breakpoints.down("xs")]: {
       height: 400,
       paddingTop:"0px"
@@ -124,9 +125,9 @@ export default function Home() {
           </div>
           <div className={classes.button}>
             <Button variant="outlined" color="primary">
-            <a className={classes.bookLink} href="https://mentorcodesbooking.netlify.app/">
-                Book a Free Class
-              </a>
+            <Link to="/booking" className={classes.bookLink}>
+                  Book a Free Class
+                </Link>
             </Button>
           </div>
         </Grid>

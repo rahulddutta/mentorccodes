@@ -1,5 +1,6 @@
 import { AppBar, Button, makeStyles, Toolbar } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import { HashLink as Lin } from "react-router-hash-link";
 import "../topbar/topbar.css";
 
@@ -91,9 +92,9 @@ export default function Topbar() {
             <div className={classes.title}>Mentor</div>
             <div className={classes.menuItems}>
               <div className={classes.listHome}>
-                <Lin className={classes.link} smooth to="#home">
+                <Link to="/"  className={classes.link}>
                   Home
-                </Lin>
+                </Link>
               </div>
               <div className={classes.list}>
                 <Lin className={classes.link} smooth to="#code">
@@ -127,9 +128,9 @@ export default function Topbar() {
                 color="primary"
                 className={classes.button}
               >
-                <a className={classes.bookLink} href="https://mentorcodesbooking.netlify.app/">
+                <Link to="/booking" className={classes.bookLink}>
                   Book a Free Class
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
@@ -139,9 +140,9 @@ export default function Topbar() {
         <Toolbar>
           <div className={classes.mobileButton}>
             <Button variant="outlined" color="primary">
-              <a className={classes.bookLink} href="https://mentorcodesbooking.netlify.app/">
-                Book a Free Class
-              </a>
+            <Link to="/booking" className={classes.bookLink}>
+                  Book a Free Class
+                </Link>
             </Button>
           </div>
         </Toolbar>

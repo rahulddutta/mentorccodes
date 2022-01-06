@@ -5,6 +5,8 @@ import Doubt from "../../images/doubt.png";
 import Laptop from "../../images/laptop.png";
 import Certificate from "../../images/certification.png";
 import Robo from "../../images/robo.png";
+import { Link } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   first: {
@@ -203,9 +205,9 @@ export default function Section14() {
                 color="primary"
                 className={classes.button}
               >
-                  <a className={classes.bookLink} href="https://mentorcodesbooking.netlify.app/">
-                Book Now
-              </a>
+                 <Link to="/booking" className={classes.bookLink}>
+                  Book a Free Class
+                </Link>
               </Button>
             </div>
           </div>

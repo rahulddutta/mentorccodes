@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
+    marginTop:"75px"
   },
   block: {
     backgroundColor: "white",

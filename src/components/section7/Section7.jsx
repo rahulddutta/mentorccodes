@@ -1,4 +1,5 @@
 import { Button, Grid, makeStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   second: {
@@ -35,9 +36,9 @@ export default function Section7() {
         <Grid item sm={12} xs={12} className={classes.second}>
           <div className={classes.button}>
             <Button variant="outlined" color="primary">
-            <a className={classes.bookLink} href="https://mentorcodesbooking.netlify.app/">
-                Book a Free Class
-              </a>
+            <Link to="/booking" className={classes.bookLink}>
+                  Book a Free Class
+                </Link>
             </Button>
           </div>
         </Grid>

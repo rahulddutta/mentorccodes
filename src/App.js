@@ -1,28 +1,19 @@
-import React from "react";
-import Home from "./components/pages/Home/Home";
-import Whycoding from "./components/pages/whyCoding/Whycoding";
-import Topbar from "./components/topbar/Topbar"
-import WhyMentor from "./components/pages/whyMentor/WhyMentor"
-import Pricing from "./components/pages/pricing/Pricing"
-import Question from "./components/pages/question/Question"
-import Contact from "./components/contact/Contact"
-import Footer from "./components/footer/Footer"
-
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Topbar from "./components/topbar/Topbar";
+import Main from "./components/pages/main/Main";
+import Booking from "./components/pages/book/Book"
 
 function App() {
   return (
-    <>
-   <Topbar/>
-   <Home/>
-   <Whycoding/>
-   <WhyMentor/>
-   <Pricing/>
-   <Question/>
-   <Contact/>
-   <Footer/>
+    <BrowserRouter>
+      <>
+        <Topbar />
       </>
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/booking" element={<Booking/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
