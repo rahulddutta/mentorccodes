@@ -1,6 +1,6 @@
 import { Button, Grid, makeStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import Kid from "../../../images/section1.png";
+import Kid from "../../../images/vr.png";
 
 const useStyles = makeStyles((theme) => ({
   section1: {
@@ -37,18 +37,20 @@ const useStyles = makeStyles((theme) => ({
   second: {
     backgroundColor: "#edf1fa",
     height: 600,
-    paddingTop:"100px",
+    paddingTop:"0px",
+    paddingLeft:"60px",
     [theme.breakpoints.down("xs")]: {
-      height: 400,
-      paddingTop:"0px"
+      height: 450,
+      paddingTop:"0px",
+      paddingLeft:"0px"
     },
   },
   img: {
-    height: 500,
+    height: 700,
     width: "500px",
     objectFit: "cover",
     [theme.breakpoints.down("xs")]: {
-      height: 400,
+      height: 500,
       width:"100%",
       objectFit:"cover"
     },
