@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginTop: "10px",
       marginLeft: "0px",
-      width: "100%",
+      width: "290px",
     },
   },
   firstInput: {
@@ -175,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
   spanInput: {
     width: "275px",
     [theme.breakpoints.down("xs")]: {
-      width: "100%",
+      width: "290px",
     },
   },
   button: {
