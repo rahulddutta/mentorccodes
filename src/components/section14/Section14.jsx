@@ -7,10 +7,9 @@ import Certificate from "../../images/certification.png";
 import Robo from "../../images/robo.png";
 import { Link } from "react-router-dom";
 
-
 const useStyles = makeStyles((theme) => ({
   first: {
-    height:600,
+    height: 600,
     [theme.breakpoints.down("sm")]: {
       height: 440,
     },
@@ -60,11 +59,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     backgroundColor: "#ebf4ff",
     margin: "30px 20px ",
-    height: 470,
+    height: 490,
     borderRadius: "20px",
-  //  boxShadow: "5px 7px grey",
+    //  boxShadow: "5px 7px grey",
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+
     [theme.breakpoints.down("sm")]: {
-      boxShadow: "none",
+     
     },
   },
   cardPhoto: {
@@ -124,8 +125,8 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Lobster, cursive;",
     color: "#030856",
     [theme.breakpoints.up("sm")]: {
-      display:"none"
-    }
+      display: "none",
+    },
   },
   spanCuri: {
     fontFamily: "Petemoss, cursive",
@@ -133,9 +134,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "10px",
   },
   bookLink: {
-    textDecoration:"none",
-    color:"inherit"
-  }
+    textDecoration: "none",
+    color: "inherit",
+  },
 }));
 
 export default function Section14() {
@@ -197,7 +198,6 @@ export default function Section14() {
             </div>
             <div className={classes.price}>
               <b>20,999</b>{" "}
-              
             </div>
             <div className={classes.details}>Full Course 6 months</div>
             <div className={classes.book}>
@@ -206,7 +206,7 @@ export default function Section14() {
                 color="primary"
                 className={classes.button}
               >
-                 <Link to="/booking" className={classes.bookLink}>
+                <Link to="/booking" className={classes.bookLink}>
                   Book a Free Class
                 </Link>
               </Button>
