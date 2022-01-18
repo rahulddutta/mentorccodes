@@ -234,7 +234,7 @@ export default function Book() {
           </Grid>
           <Grid item xs={12} md={7} sm={12} className={classes.second}>
             <div className={classes.text1}>
-              The class is for students studying in Class 5 and above
+              The class is for teens of age 12 and above
             </div>
             <div className={classes.text2}>
               Certificate on Web Development will be awarded post course

@@ -193,7 +193,7 @@ export default function Section14() {
               <b> 53,999</b>
             </div>
             <div className={classes.offer}>
-              <b>Introductory Offer (25 days)</b>{" "}
+              <b>Introductory Offer (valid 02/02/2022)</b>{" "}
             </div>
             <div className={classes.price}>
               <b>20,999</b>{" "}
