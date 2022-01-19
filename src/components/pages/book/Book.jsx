@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: "14px",
     [theme.breakpoints.down("xs")]: {
-      marginLeft:"70px"
+      marginLeft:"90px"
     },
   },
   text1: {
@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginTop: "10px",
       marginLeft: "0px",
-      width: "290px",
+      width: "320px",
     },
   },
   firstInput: {
@@ -175,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
   spanInput: {
     width: "275px",
     [theme.breakpoints.down("xs")]: {
-      width: "290px",
+      width: "320px",
     },
   },
   button: {
