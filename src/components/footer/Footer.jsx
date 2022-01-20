@@ -64,7 +64,7 @@ export default function Footer() {
       <Grid container>
         <Grid item sm={12} xs={12} className={classes.first}>
           <div className={classes.text1}>
-            All rights reserved 2021 &copy; Mentor.com
+            All rights reserved 2021 &copy; mentorcodes.com
           </div>
           <div className={classes.text2}>
             Made with <span className={classes.heart}>&hearts;</span> in India

@@ -92,7 +92,7 @@ export default function Topbar() {
             <div className={classes.title}>Mentor</div>
             <div className={classes.menuItems}>
               <div className={classes.listHome}>
-                <Link to="/"  className={classes.link}>
+                <Link to="/" className={classes.link}>
                   Home
                 </Link>
               </div>
