@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./code.css";
 import Editor from "../../Editor/Editor";
+import UseLocalStorage from "../../hooks/UseLocalStorage"
+
 
 export default function Code() {
-  const [html, setHtml] = useState("");
-  const [css, setCss] = useState("");
-  const [js, setJs] = useState("");
+  const [html, setHtml] = UseLocalStorage('html',"");
+  const [css, setCss] =UseLocalStorage('css',"");;
+  const [js, setJs] =UseLocalStorage('js',"");
   const [srcDoc, setSrcDoc] = useState("");
 
   useEffect(() => {
@@ -18,7 +20,7 @@ export default function Code() {
     
       </html>
       `);
-    }, 1000);
+    }, 250);
     return () => clearTimeout(timeout);
   }, [html, css, js]);
 
