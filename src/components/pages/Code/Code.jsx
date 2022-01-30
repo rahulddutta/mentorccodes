@@ -20,7 +20,7 @@ export default function Code() {
     
       </html>
       `);
-    }, 250);
+    }, 850);
     return () => clearTimeout(timeout);
   }, [html, css, js]);
 
