@@ -118,7 +118,9 @@ export default function Topbar() {
               </div>
               <div className={classes.list}>
                 <div>
-                  <a className={classes.link} href="https://mentorcodeside.netlify.app/">Write Code</a>
+                <Link to="/code" className={classes.bookLink}>
+                  Write Code
+                </Link>
                 </div>
               </div>
             </div>
