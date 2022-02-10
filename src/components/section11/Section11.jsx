@@ -1,16 +1,17 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import Hack from "../../images/hack.webp";
+import Man from "../../images/man.png";
+
 
 const useStyles = makeStyles((theme) => ({
   first: {
-    height: 490,
+    height: 520,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
       height: 270,
     },
   },
   second: {
-    height: 490,
+    height: 520,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
       height: 270,
@@ -18,13 +19,14 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: "100%",
+    height:520,
     objectFit: "cover",
     [theme.breakpoints.down("xs")]: {
-      height:250
+      height:290,
     },
   },
   text: {
-    marginTop: "150px",
+    marginTop: "100px",
     marginLeft: "70px",
     fontSize: "90px",
     color: "white",
@@ -78,7 +80,7 @@ export default function Section11() {
         </Grid>
         <Grid item xs={12} sm={6} className={classes.second}>
           <div className={classes.photo}>
-            <img className={classes.img} src={Hack} alt="" />
+            <img className={classes.img} src={Man} alt="" />
           </div>
         </Grid>
       </Grid>

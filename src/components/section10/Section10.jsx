@@ -3,36 +3,38 @@ import Tutor from "../../images/codee.png";
 
 const useStyles = makeStyles((theme) => ({
   first: {
-    height: 500,
+    height: 450,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-        height:200
-      },
+      height: 200,
+    },
   },
   second: {
-    height: 500,
+    height: 450,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-        height:320
-      },
+      height: 320,
+    },
   },
   img: {
-    width: "100%",
+    width: 600,
     objectFit: "cover",
+    height: 450,
+    [theme.breakpoints.down("xs")]: {
+      height: 320,
+      width: "100%",
+    },
   },
   text: {
-    marginTop: "90px",
-    marginLeft: "70px",
-    fontSize: "90px",
+    fontSize: "70px",
     color: "white",
+    marginTop: "100px",
+    marginLeft: "50px",
     fontFamily: "Petemoss, cursive",
     [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
       marginTop: "0px",
       marginLeft: "0px",
-      display: "flex",
-      flexDirection: "column",
-      textAlign: "center",
-      fontSize: "60px",
     },
   },
   textSec: {
@@ -49,9 +51,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     marginTop: "20px",
     [theme.breakpoints.down("xs")]: {
-      fontSize:"16px",
-      padding:"5px"
-      },
+      fontSize: "16px",
+      padding: "5px",
+    },
   },
 }));
 
@@ -65,8 +67,8 @@ export default function Section10() {
             <div className={classes.text0}>Our Teachers</div>
             <div className={classes.textSec}>a Mentor for everyone</div>
             <div className={classes.para}>
-              You will learn from teachers who has industry relevant
-              experience in tech and teaching.
+              You will learn from teachers who has industry relevant experience
+              in tech and teaching.
             </div>
           </div>
         </Grid>
