@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: 520,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-      height: 270,
+      height: 320,
     },
   },
   img: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height:520,
     objectFit: "cover",
     [theme.breakpoints.down("xs")]: {
-      height:290,
+      height:320,
     },
   },
   text: {
