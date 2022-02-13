@@ -1,5 +1,5 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import Tutor from "../../images/codee.png";
+import App from "../../images/app.png";
 
 const useStyles = makeStyles((theme) => ({
   first: {
@@ -13,16 +13,18 @@ const useStyles = makeStyles((theme) => ({
     height: 450,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-      height: 320,
+      height: 340,
     },
   },
   img: {
-    width: 600,
+    width: "500px",
+    height:"400px",
     objectFit: "cover",
-    height: 450,
+    padding:"20px",
     [theme.breakpoints.down("xs")]: {
       height: 320,
       width: "100%",
+      padding:"0px"
     },
   },
   text: {
@@ -74,7 +76,7 @@ export default function Section10() {
         </Grid>
         <Grid item xs={12} sm={6} className={classes.second}>
           <div className={classes.photo}>
-            <img className={classes.img} src={Tutor} alt="" />
+            <img className={classes.img} src={App} alt="" />
           </div>
         </Grid>
       </Grid>

@@ -1,26 +1,28 @@
 import { Grid, makeStyles } from "@material-ui/core";
-import Peda from "../../images/peda.png";
+import Peda from "../../images/pedaa.png";
 
 const useStyles = makeStyles((theme) => ({
   first: {
-    height: 490,
+    height: 530,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-      height: 300,
+      height: 330,
     },
   },
   second: {
-    height: 490,
+    height: 530,
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
-      height: 300,
+      height: 330,
     },
   },
   img: {
     width: "100%",
     objectFit: "cover",
+    height:490,
+    padding:"10px",
     [theme.breakpoints.down("xs")]: {
-    height:280
+    height:290
     },
   },
   text: {
