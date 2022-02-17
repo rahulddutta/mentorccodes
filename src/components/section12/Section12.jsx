@@ -18,13 +18,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: "100%",
+    width: 550,
     objectFit: "cover",
-    height:490,
+    height:500,
     padding:"0px",
     [theme.breakpoints.down("xs")]: {
     height:330
     },
+    [theme.breakpoints.up("xl")]: {
+      backgroundColor:"pink"
+      },
   },
   text: {
     marginTop: "90px",

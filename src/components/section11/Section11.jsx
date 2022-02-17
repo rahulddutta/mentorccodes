@@ -18,9 +18,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: "100%",
+    width: 600,
     height:520,
     objectFit: "cover",
+    alignItems:"center",
     [theme.breakpoints.down("xs")]: {
       height:320,
     },
