@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
   second: {
     height: 530,
+    width:"100%",
     backgroundColor: "#004bb3",
     [theme.breakpoints.down("xs")]: {
       height: 330,
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     height:490,
     padding:"0px",
     [theme.breakpoints.down("xs")]: {
-    height:290
+    height:330
     },
   },
   text: {
