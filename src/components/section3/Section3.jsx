@@ -38,8 +38,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    width: "100%",
+    width:550,
     objectFit: "cover",
+    height:700,
   },
   heading: {
     fontFamily: "Petemoss, cursive",
