@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems:"center",
     [theme.breakpoints.down("xs")]: {
       height:320,
+      width:"100%"
     },
   },
   text: {

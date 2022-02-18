@@ -23,11 +23,9 @@ const useStyles = makeStyles((theme) => ({
     height:500,
     padding:"0px",
     [theme.breakpoints.down("xs")]: {
-    height:330
+    height:330,
+    width:"100%",
     },
-    [theme.breakpoints.up("xl")]: {
-      backgroundColor:"pink"
-      },
   },
   text: {
     marginTop: "90px",
