@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: "14px",
     [theme.breakpoints.down("xs")]: {
-      marginLeft:"90px"
+      marginLeft: "90px",
     },
   },
   text1: {
@@ -201,7 +201,9 @@ export default function Book() {
       )
       .then(
         (result) => {
-          alert("You are successfuly registered. Please expect a call from us regarding your schedule");
+          alert(
+            "You are successfuly registered. Please expect a call from us regarding your schedule"
+          );
         },
         (error) => {
           console.log(error.text);
@@ -260,6 +262,10 @@ export default function Book() {
                       label="Phone Number"
                       variant="outlined"
                       name="phone_number"
+                      inputProps={{
+                        className: classes.input,
+                        pattern: "[1-9]{1}[0-9]{9}",
+                      }}
                       className={classes.spanInput}
                     ></TextField>
                   </span>

@@ -141,6 +141,7 @@ export default function Contact() {
                   required
                   label="Phone Number"
                   variant="outlined"
+                  inputProps={{ className: classes.input, pattern: "[1-9]{1}[0-9]{9}" }}
                   className={classes.inputFieldNum}
                   name="phone_number"
                 />{" "}
