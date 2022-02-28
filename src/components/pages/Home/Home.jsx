@@ -109,7 +109,7 @@ export default function Home() {
       <Grid container>
         <Grid item sm={6} xs={12} className={classes.first}>
           <div className={classes.text}>
-            <div>Live code classes for</div>
+            <div>Live coding classes for</div>
             {/* <div>classes for</div> */}
             <div className={classes.text3}>
               Automating{" "}
