@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "30px",
       height: 50,
+      paddingTop:"0px"
     },
   },
   span: {
