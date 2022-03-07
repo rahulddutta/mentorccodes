@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#004bb3",
     color: "white",
     display: "flex",
+    paddingTop:"40px",
     alignItems: "center",
     justifyContent: "center",
     fontSize: "50px",

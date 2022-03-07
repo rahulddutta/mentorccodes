@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   section2: {
     height: 150,
+    paddingTop:"20px",
     backgroundColor: "#d7e4f4",
     display: "flex",
     alignItems: "center",

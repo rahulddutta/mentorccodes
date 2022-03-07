@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
     height: 150,
     display: "flex",
     alignItems: "center",
+    paddingTop:"40px",
     justifyContent: "center",
     backgroundColor: "#edf1fa",
     fontFamily: "Petemoss, cursive",

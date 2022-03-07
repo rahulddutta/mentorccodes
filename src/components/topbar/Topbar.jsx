@@ -92,9 +92,9 @@ export default function Topbar() {
             <div className={classes.title}>Mentor</div>
             <div className={classes.menuItems}>
               <div className={classes.listHome}>
-                <Link to="/" className={classes.link}>
+                <Lin smooth to="#home" className={classes.link}>
                   Home
-                </Link>
+                </Lin>
               </div>
               <div className={classes.list}>
                 <Lin className={classes.link} smooth to="#code">
