@@ -97,13 +97,13 @@ const useStyles = makeStyles((theme) => ({
   offer: {
     backgroundColor: "#fc9b00",
     color: "#004bb3",
-    marginLeft: "240px",
-    marginRight: "240px",
+    marginLeft: "0px",
+    marginRight: "0px",
     marginBottom: "10px",
     fontSize: "14px",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "100px",
-      marginRight: "100px",
+      marginLeft: "0px",
+      marginRight: "0px",
     },
   },
   price: {
