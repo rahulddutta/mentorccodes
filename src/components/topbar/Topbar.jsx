@@ -1,9 +1,9 @@
 import { AppBar, Button, makeStyles, Toolbar } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { HashLink as Lin } from "react-router-hash-link";
 import "../topbar/topbar.css";
-
 
 const useStyles = makeStyles((theme) => ({
   topbar: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   listHome: {
     marginRight: "20px",
     fontFamily: "Roboto Slab, serif",
-    borderBottom: "1px solid red",
+    // borderBottom: "1px solid red",
   },
   list: {
     marginRight: "20px",
@@ -72,14 +72,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     width: "100%",
   },
-  link: {
-    textDecoration: "none",
-    color: "#614665",
-  },
   bookLink: {
-    textDecoration:"none",
-    color:"inherit"
-  }
+    textDecoration: "none",
+    color: "inherit",
+  },
 }));
 
 export default function Topbar() {
@@ -92,35 +88,35 @@ export default function Topbar() {
             <div className={classes.title}>Mentor</div>
             <div className={classes.menuItems}>
               <div className={classes.listHome}>
-                <Lin smooth to="#home" className={classes.link}>
+                <NavHashLink smooth to="#home" className="link">
                   Home
-                </Lin>
+                </NavHashLink>
               </div>
               <div className={classes.list}>
-                <Lin className={classes.link} smooth to="#code">
+                <Lin  smooth to="#code" className="link">
                   Why Coding
                 </Lin>
               </div>
               <div className={classes.list}>
-                <Lin className={classes.link} smooth to="#mentor">
+                <Lin smooth to="#mentor" className="link">
                   Why Mentor
                 </Lin>
               </div>
               <div className={classes.list}>
-                <Lin className={classes.link} smooth to="#price">
+                <Lin smooth to="#price" className="link">
                   Pricing
                 </Lin>
               </div>
               <div className={classes.list}>
-                <Lin className={classes.link} smooth to="#question">
+                <Lin smooth to="#question" className="link">
                   FAQ
                 </Lin>
               </div>
               <div className={classes.list}>
                 <div>
-                <Link to="/code" className={classes.bookLink}>
-                  Write Code
-                </Link>
+                  <Link to="/code" className="link">
+                    Write Code
+                  </Link>
                 </div>
               </div>
             </div>
@@ -142,9 +138,9 @@ export default function Topbar() {
         <Toolbar>
           <div className={classes.mobileButton}>
             <Button variant="outlined" color="primary">
-            <Link to="/booking" className={classes.bookLink}>
-                  Book a Free Class
-                </Link>
+              <Link to="/booking" className={classes.bookLink}>
+                Book a Free Class
+              </Link>
             </Button>
           </div>
         </Toolbar>
