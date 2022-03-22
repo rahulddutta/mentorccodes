@@ -82,9 +82,10 @@ const useStyles = makeStyles((theme) => ({
   info : {
     display:"flex",
     color:"black",
-    width:"330px",
+    width:"200px",
     height:"40px",
     alignItems:"center",
+    justifyContent:"space-around"
   },
   avatar : {
     height:"40px",
@@ -94,8 +95,9 @@ const useStyles = makeStyles((theme) => ({
   },
   avatarName : {
     color: "#614665",
-    marginLeft: "30px",
-    fontFamily: "Roboto Slab, serif"
+    marginRight: "20px",
+    fontFamily: "Roboto Slab, serif",
+
   }
 }));
 
@@ -160,7 +162,7 @@ export default function Topbar({ user }) {
                 <div>
                   <img className={classes.avatar} src={user.photoURL} alt="" />
                 </div>
-                <div className={classes.avatarName}>{user.displayName}</div>
+                <div className={classes.avatarName}>Rahul Dutta</div>
               </div>
             ) : (
               <div className={classes.btn}>
