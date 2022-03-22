@@ -82,10 +82,9 @@ const useStyles = makeStyles((theme) => ({
   info : {
     display:"flex",
     color:"black",
-    width:"270px",
+    width:"330px",
     height:"40px",
     alignItems:"center",
-    justifyContent:"space-around"
   },
   avatar : {
     height:"40px",
@@ -95,9 +94,8 @@ const useStyles = makeStyles((theme) => ({
   },
   avatarName : {
     color: "#614665",
-    marginRight: "20px",
-    fontFamily: "Roboto Slab, serif",
-
+    marginLeft: "30px",
+    fontFamily: "Roboto Slab, serif"
   }
 }));
 
