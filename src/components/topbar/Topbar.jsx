@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { HashLink as Lin } from "react-router-hash-link";
 import "../topbar/topbar.css";
+import { firebase } from "../../firebase/Firebase";
+import "firebase/compat/auth";
+
 
 const useStyles = makeStyles((theme) => ({
   topbar: {
@@ -76,10 +79,34 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "inherit",
   },
+  info : {
+    display:"flex",
+    color:"black",
+   
+    width:"200px",
+    height:"40px",
+    alignItems:"center",
+    justifyContent:"space-around"
+  },
+  avatar : {
+    height:"40px",
+    width:"40px",
+    borderRadius:"50%",
+    objectFit:"cover"
+  },
+  avatarName : {
+    color: "#614665",
+    marginRight: "20px",
+    fontFamily: "Roboto Slab, serif",
+
+  }
 }));
 
-export default function Topbar() {
+export default function Topbar({ user }) {
   const classes = useStyles();
+  const SignOut = () => {
+    firebase.auth().signOut();
+  };
   return (
     <div>
       <AppBar elevation={0} className={classes.topbar}>
@@ -93,7 +120,7 @@ export default function Topbar() {
                 </NavHashLink>
               </div>
               <div className={classes.list}>
-                <Lin  smooth to="#code" className="link">
+                <Lin smooth to="#code" className="link">
                   Why Coding
                 </Lin>
               </div>
@@ -119,18 +146,38 @@ export default function Topbar() {
                   </Link>
                 </div>
               </div>
+              <div className={classes.list}>
+                {user ? (
+                  <div className="link" onClick={SignOut}>Logout</div>
+                ) : (
+                  <div>
+                    <Link to="/login" className="link">
+                      Login
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
-            <div className={classes.btn}>
-              <Button
-                variant="outlined"
-                color="primary"
-                className={classes.button}
-              >
-                <Link to="/booking" className={classes.bookLink}>
-                  Book a Free Class
-                </Link>
-              </Button>
-            </div>
+            {user ? (
+              <div className={classes.info}>
+                <div>
+                  <img className={classes.avatar} src={user.photoURL} alt="" />
+                </div>
+                <div className={classes.avatarName}>{user.displayName}</div>
+              </div>
+            ) : (
+              <div className={classes.btn}>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  className={classes.button}
+                >
+                  <Link to="/booking" className={classes.bookLink}>
+                    Book a Free Class
+                  </Link>
+                </Button>
+              </div>
+            )}
           </div>
         </Toolbar>
       </AppBar>

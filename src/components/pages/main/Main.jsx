@@ -11,11 +11,11 @@ import WhyMentor from '../whyMentor/WhyMentor'
 
 const useStyles = makeStyles((theme) => ({}))
 
-export default function Main() {
+export default function Main({user}) {
     const classes = useStyles()
     return (
         <div className={classes.main}>
-            <Topbar/>
+            <Topbar user={user}/>
             <Home/>
             <Whycoding/>
             <WhyMentor/>
