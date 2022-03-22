@@ -82,8 +82,7 @@ const useStyles = makeStyles((theme) => ({
   info : {
     display:"flex",
     color:"black",
-   
-    width:"200px",
+    width:"270px",
     height:"40px",
     alignItems:"center",
     justifyContent:"space-around"
