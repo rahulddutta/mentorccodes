@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MessengerCustomerChat from "react-messenger-customer-chat";
-// import Loader from "./components/loader/Loader";
+import Loader from "./components/loader/Loader";
 import Main from "./components/pages/main/Main";
 import Booking from "./components/pages/book/Book";
 import About from "./components/aboutus/About";
 import Code from "./components/pages/Code/Code";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Login from "./components/pages/login/Login";
 import { firebase } from "./firebase/Firebase";
 import "firebase/compat/auth";
@@ -17,21 +17,21 @@ const auth = firebase.auth();
 
 
 function App() {
-  // const [isloading, setIsLoading] = useState(true);
+  const [isloading, setIsLoading] = useState(true);
   //const [user,setUser] = useState(true)
   const [user] = useAuthState(auth);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 3500);
-  // });
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3500);
+  });
 
   return (
     <>
-      {/* {isloading === true ? (
+      {isloading === true ? (
         <Loader />
-      ) : ( */}
+      ) : (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main user={user} />}></Route>
@@ -51,7 +51,7 @@ function App() {
             appId=" 370066444957420"
           />
         </BrowserRouter>
-      {/* )} */}
+       )}
     </>
   );
 }
