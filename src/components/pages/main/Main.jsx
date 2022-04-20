@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({}))
 export default function Main({user}) {
     const classes = useStyles()
     return (
-        <div className={classes.main}>
+        <div id='container' className={classes.main}>
             <Topbar user={user}/>
             <Home/>
             <Whycoding/>
