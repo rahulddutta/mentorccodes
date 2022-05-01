@@ -162,7 +162,7 @@ export default function Topbar({ user }) {
                 <div>
                   <img className={classes.avatar} src={user.photoURL} alt="" />
                 </div>
-                <div className={classes.avatarName}>Rahul Dutta</div>
+                <div className={classes.avatarName}>{user.name}</div>
               </div>
             ) : (
               <div className={classes.btn}>
