@@ -20,6 +20,7 @@ function App() {
   const [isloading, setIsLoading] = useState(true);
   //const [user,setUser] = useState(true)
   const [user] = useAuthState(auth);
+  console.log(user)
 
   useEffect(() => {
     setTimeout(() => {
