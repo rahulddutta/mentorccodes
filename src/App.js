@@ -52,7 +52,7 @@ function App() {
             appId=" 370066444957420"
           />
         </BrowserRouter>
-       )}
+      )}
     </>
   );
 }

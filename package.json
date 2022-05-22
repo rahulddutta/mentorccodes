@@ -26,6 +26,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-snap": "^1.23.0",
+    "react-toastify": "^9.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
