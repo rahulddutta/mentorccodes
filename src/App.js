@@ -11,7 +11,7 @@ import { firebase } from "./firebase/Firebase";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
-
+import VideoCall from "./components/pages/videoCall/VideoCall"
 
 const auth = firebase.auth();
 
@@ -45,6 +45,7 @@ function App() {
               path="/login"
               element={user ? <Navigate to="/" /> : <Login />}
             ></Route>
+            <Route path="/videocall" element={user ? <VideoCall/> : <Navigate to="/login" />}></Route>
           </Routes>
           <MessengerCustomerChat
             pageId="109790721641423"

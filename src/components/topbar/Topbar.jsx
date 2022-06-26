@@ -146,6 +146,13 @@ export default function Topbar({ user }) {
                 </div>
               </div>
               <div className={classes.list}>
+                <div>
+                  <Link to="/videocall" className="link">
+                    Join Live Class
+                  </Link>
+                </div>
+              </div>
+              <div className={classes.list}>
                 {user ? (
                   <div className="link" onClick={SignOut}>Logout</div>
                 ) : (
