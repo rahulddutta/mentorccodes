@@ -1,8 +1,11 @@
 import React from 'react'
+import VideoNav from '../../videonavbar/VideoNav'
 
 const VideoCall = () => {
   return (
-    <div>VideoCall</div>
+    <div>
+      <VideoNav/>
+    </div>
   )
 }
 
