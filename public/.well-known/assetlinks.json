@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "com.mentorcodes.twa",
+                     "sha256_cert_fingerprints": ["9B:50:9E:53:87:A4:CC:CC:34:B5:A9:B6:DF:58:8F:78:E6:24:1D:EA:AB:D2:C9:36:23:A3:0E:C4:07:C4:A5:79"] }
+      }
+]
